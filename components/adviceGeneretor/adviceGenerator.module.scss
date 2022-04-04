@@ -1,0 +1,48 @@
+.advice {
+  --m-width: 34.5rem;
+  // --d-width:
+
+  background-color: var(--clr-neutral-dark-grayish-blue);
+  max-width: var(--m-width);
+  padding-top: 4rem;
+  padding-inline: 2rem;
+  padding-bottom: 6rem;
+  border-radius: 1rem;
+  position: relative;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.title {
+  color: var(--clr-prim-neon-green);
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  font-size: 1rem;
+  font-weight: var(--fw-400);
+}
+
+.text {
+  font-size: var(--fs-quote);
+  text-align: center;
+  color: var(--clr-prim-light-cyan);
+  font-weight: var(--fw-600);
+  line-height: 1.4;
+}
+
+.button {
+  all: unset;
+
+  position: absolute;
+  bottom: -32px;
+}
+
+.iconDiceWrapper {
+  padding: 2rem;
+  background-color: var(--clr-prim-neon-green);
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+}

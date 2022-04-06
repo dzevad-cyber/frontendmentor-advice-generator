@@ -67,6 +67,11 @@
 
   display: grid;
   place-items: center;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 30px var(--clr-prim-neon-green);
+  }
 }
 
 .mobileSvg {

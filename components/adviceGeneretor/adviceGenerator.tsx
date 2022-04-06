@@ -1,28 +1,20 @@
 import axios from 'axios';
 import Image from 'next/image';
-import { useEffect, useReducer, useState } from 'react';
 
+import { useAdviceApiContext } from '../../context/adviceApiContext';
 import styles from './adviceGenerator.module.scss';
 
-interface IAdvice {
-  advice?: string;
-  id?: string;
-}
-
 const AdviceGenerator = () => {
-  const [advice, setAdvice] = useState<IAdvice>({});
-  const [defaultAdvice] = useState({
-    advice:
-      "It is easy to sit up and take notice, what's difficult is getting up and taking action.",
-    id: '117',
-  });
+  const advice: any = useAdviceApiContext();
+
+  const { adviceContext, setAdviceContext } = advice;
 
   const handleGenerateAdvice = async () => {
     try {
       const { data } = await axios.get('https://api.adviceslip.com/advice');
       const { slip } = data;
 
-      setAdvice(slip);
+      setAdviceContext(slip);
     } catch (err) {
       console.error(err);
     }
@@ -31,10 +23,10 @@ const AdviceGenerator = () => {
   return (
     <article className={styles.advice}>
       <h2 className={styles.title}>
-        Advice &#35;{advice.id ? advice.id : defaultAdvice.id}
+        Advice &#35;{advice.id ? advice.id : adviceContext.id}
       </h2>
       <p className={styles.text}>
-        &ldquo;{advice.advice ? advice.advice : defaultAdvice.advice}
+        &ldquo;{advice.advice ? advice.advice : adviceContext.advice}
         &rdquo;
       </p>
       <div className={styles.graphic}>

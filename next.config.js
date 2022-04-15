@@ -6,8 +6,8 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  basePath: '/next-pages',
-  assetPrefix: '/next-pages',
+  basePath: '/frontendmentor-advice-generator',
+  assetPrefix: '/frontendmentor-advice-generator',
 };
 
 module.exports = nextConfig;

@@ -5,9 +5,9 @@ const nextConfig = {
   images: {
     loader: 'akamai',
     path: '',
-    basePath: '/next-pages',
-    assetPrefix: '/next-pages',
   },
+  basePath: '/next-pages',
+  assetPrefix: '/next-pages',
 };
 
 module.exports = nextConfig;

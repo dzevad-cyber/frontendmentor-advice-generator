@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View code here](https://github.com/lulzz/frontendmentor-advice-generator)
-- Live Site URL: [View Live site here](https://your-live-site-url.com)
+- Live Site URL: [View Live site here](https://lulzz.github.io/frontendmentor-advice-generator)
 
 ## My process
 
@@ -42,4 +42,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@lulzz](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@lulzz](https://www.frontendmentor.io/profile/lulzz)
